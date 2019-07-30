@@ -1,0 +1,139 @@
+body {
+    overflow-y: scroll;
+    background-image: linear-gradient(#09093a, rgb(3, 9, 12) 85%);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: 20px 100%;
+    color: #fff;
+}
+h1 {
+    
+    padding-bottom: 0;
+    padding-top: 16px;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.3333;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+label{
+    margin-bottom: 0;
+}
+
+
+.form-label, .form-block-label {
+    font-size: 17px;
+    line-height: 1.23543;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    display: block;
+    position: relative;
+    color: #333;
+}
+
+
+
+.form-textbox-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.form-textbox{
+    height: 3.3em;
+    padding-top: 18px;
+}
+
+.form-textbox ~ .form-label {
+    position: absolute;
+    top: 16px;
+    left: 17px;
+    color: #888;
+    pointer-events: none;
+    padding: 0;
+    z-index: 1;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-transition-duration: .125s;
+    transition-duration: .125s;
+}
+.form-textbox.form-icon-left ~ .form-label {
+    left: 50px;
+}
+.form-textbox.form-icon-left {
+    padding-left: 49px;
+}
+
+.form-textbox ~ .form-icons {
+    position: absolute;
+    top: .94118rem;
+    line-height: 0;
+    right: 1.11765rem;
+    z-index: 1;
+    vertical-align: middle;
+}
+
+.form-textbox.form-icon-left ~ .form-icons {
+    top: .88235rem;
+    left: 11px;
+    width: 30px;
+}
+
+.form-textbox:focus ~ .form-label, .form-textbox:valid[required] ~ .form-label, .form-textbox[placeholder] ~ .form-label, .form-textbox.form-textbox-entered ~ .form-label {
+    font-size: 12px;
+    line-height: 1.75;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    top: 2px;
+    color: #666;
+}
+
+
+.wrap{
+
+
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        min-height: 100vh;
+        position: relative;
+}
+
+.wrap:before, .wrap:after {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    content: '';
+    display: block;
+    height: 24px;
+}
+
+.box{
+    background-color: #fff;
+    padding: 16px;
+    color: #202124;
+}
+
+.uiTextareaAutogrow{
+    resize: none 
+}
+
+@media (min-width: 750px){
+    .box {
+        padding: 40px;
+        -webkit-flex-shrink: 0;
+        flex-shrink: 0;
+        border: 1px solid rgba(0,0,0,.1);
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        display: block;
+        margin: 0 auto;
+        min-height: 0;
+        width: 750px;
+        box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    }
+
+}
