@@ -31,12 +31,10 @@
 
                         <div class="alert alert-warning">
                             <ul class="mb-0 pl-4">
-                                <li>ความคิดเห็นนี้จะไม่มีการระบุว่าคุณเป็นใคร</li>
-                                <li>คุณสามารถแจ้งความต้องการของคุณเพื่อให้บริษัทปรับปรุงบริษัท</li>
-                                <!-- <li>เพื่อให้บริษัทปรับปรุง</li> -->
+                                <li>มั่นใจได้เลย! ความคิดเห็นของคุณจะถูกปิดเป็นความลับ  และไม่สามารถระบุตัวตนได้ว่าคุณเป็นใครในการแสดงความคิดเห็นนี้</li>
+                                <li>การแสดงความคิดเห็นเชิงสร้างสรรค์จะช่วยผลักดันให้การทำงานมีประสิทธิภาพและภาพรวมมีความสำเร็จสูงขึ้น!</li>
                             </ul>
                         </div>
-
 
                         <div class="mb-3 form-textbox-wrap">
                             <input id="input-title" type="text" class="form-control form-textbox form-textbox-text form-icon-left" name="title" autocapitalize="off" autocomplete="off"  required aria-required="true" autocorrect="off"/>

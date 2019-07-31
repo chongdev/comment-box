@@ -75,7 +75,10 @@ label{
     width: 30px;
 }
 
-.form-textbox:focus ~ .form-label, .form-textbox:valid[required] ~ .form-label, .form-textbox[placeholder] ~ .form-label, .form-textbox.form-textbox-entered ~ .form-label {
+.form-textbox:focus ~ .form-label, 
+.form-textbox:valid[required] ~ .form-label, 
+.form-textbox[placeholder] ~ .form-label, 
+.form-textbox.form-textbox-entered ~ .form-label {
     font-size: 12px;
     line-height: 1.75;
     font-weight: 400;
