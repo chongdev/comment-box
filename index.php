@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='sweetalert2.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
    
 </head>
@@ -16,31 +17,46 @@
 
         <div class="wrap">
 
-                <div class="box">
+                <form id="box" class="box" method="post" action="#">
 
-                    <div class="text-center">
+                    <div class="box-loader" aria-hidden="true"></div>
+
+                    
+                    <div class="box-header text-center">
                         <img src="mail-box.svg" alt="" style="max-width: 100px" />
                         <h1><span>กล่องแสดงความคิดเห็นพนักงาน</span></h1>
                     </div>
 
-                    <div class="mb-3 form-textbox-wrap">
-                        <input id="input-title" type="text" class="form-control form-textbox form-textbox-text form-icon-left" name="title" autocapitalize="off" autocomplete="off"  required aria-required="true" autocorrect="off"/>
-                        <label class="form-label" >หัวข้อ</label>
+                    <div class="box-content">
 
-                        <div class="form-icons"><img src="idea.svg" alt="" width="24" height="24" /></div>
+                        <div class="alert alert-warning">
+                            <ul class="mb-0 pl-4">
+                                <li>ความคิดเห็นนี้จะไม่มีการระบุว่าคุณเป็นใคร</li>
+                                <li>คุณสามารถแจ้งความต้องการของคุณเพื่อให้บริษัทปรับปรุงบริษัท</li>
+                                <!-- <li>เพื่อให้บริษัทปรับปรุง</li> -->
+                            </ul>
+                        </div>
+
+
+                        <div class="mb-3 form-textbox-wrap">
+                            <input id="input-title" type="text" class="form-control form-textbox form-textbox-text form-icon-left" name="title" autocapitalize="off" autocomplete="off"  required aria-required="true" autocorrect="off"/>
+                            <label class="form-label">หัวข้อ</label>
+
+                            <div class="form-icons"><img src="idea.svg" alt="" width="24" height="24" /></div>
+                        </div>
+
+                        <div class="mb-3 form-textbox-wrap">
+                            <textarea id="input-text" class="form-control form-textbox form-textbox-text form-icon-left" name="text" autocomplete="off" rows="4" required></textarea>
+                            <label class="form-label">รายละเอียด</label>
+                            <div class="form-icons"><img src="chat.svg" alt="" width="24" height="24" /></div>
+                        </div>
                     </div>
 
-                    <div class="mb-3 form-textbox-wrap">
-                        <textarea id="input-text" class="form-control form-textbox form-textbox-text form-icon-left" name="text" autocomplete="off" rows="4"></textarea>
-                        <label class="form-label">รายละเอียด</label>
-                        <div class="form-icons"><img src="chat.svg" alt="" width="24" height="24" /></div>
-                    </div>
-
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between box-footer box-content">
                         <div></div>
-                        <button class="btn btn-primary btn-lg" type="button">ส่งความคิดเห็น</button>
+                        <button class="btn btn-primary btn-lg" type="submit">ส่งความคิดเห็น</button>
                     </div>
-            </div>
+            </form>
         </div>
     </div>
 
