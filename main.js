@@ -1,8 +1,6 @@
 $(function () {
 
     $('#input-text').autosize();
-
-
     $('body').delegate('[data-action=close-tab-window]', 'click', function(evt) {
         evt.preventDefault();
         
